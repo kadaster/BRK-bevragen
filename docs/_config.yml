@@ -1,4 +1,4 @@
-baseurl: "/Haal-Centraal-BRK-bevragen"
+baseurl: "/BRK-bevragen"
 apiname: "BRK Bevragen"
 url: "http://localhost:4000"
 # nav is t.b.v. generatie side-navigation menu.
@@ -49,8 +49,8 @@ plugins:
 
 remote_theme: VNG-Realisatie/jekyll-theme-haal-centraal
 
-github: VNG-Realisatie/Haal-Centraal-BRK-bevragen
+github: kadaster/BRK-bevragen
 
 theme: jekyll-theme-time-machine
 
-project_name: /Haal-Centraal-BRK-bevragen
+project_name: /BRK-bevragen
