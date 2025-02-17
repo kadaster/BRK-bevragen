@@ -48,11 +48,11 @@ De volgende Basis Registratie Kadaster gegevens kunnen opgevraagd worden:
 
 #### KadasterNatuurlijkPersoon
 - Opvragen van 1 specifiek kadaster natuurlijk persoon resource o.b.v. een kadasterpersoonidentificatie.
-- Opvragen van een collectie kadaster natuurlijkpersoon resources o.b.v. een zoekterm. (Zie feature [zoeken kadasternatuurlijkpersoon](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/blob/master/features/zoeken-kadasternatuurlijkpersoon.feature))
+- Opvragen van een collectie kadaster natuurlijkpersoon resources o.b.v. een zoekterm. (Zie feature [zoeken kadasternatuurlijkpersoon](https://github.com/kadaster/BRK-bevragen/blob/master/features/zoeken-kadasternatuurlijkpersoon.feature))
 
 #### KadasterNietNatuurlijkPersoon
 - Opvragen van 1 specifiek kadaster nietnatuurlijk persoon resource o.b.v. kadasterpersoonidentificatie.
-- Opvragen van een collectie kadaster nietnatuurlijk persoon resources o.b.v. een zoekterm. (Zie feature [zoeken kadasternietnatuurlijkpersoon](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/blob/master/features/zoeken-kadasternietnatuurlijkpersoon.feature))
+- Opvragen van een collectie kadaster nietnatuurlijk persoon resources o.b.v. een zoekterm. (Zie feature [zoeken kadasternietnatuurlijkpersoon](https://github.com/kadaster/BRK-bevragen/blob/master/features/zoeken-kadasternietnatuurlijkpersoon.feature))
 
 #### Hypotheek
 - Opvragen van 1 specifiek hypotheek resource o.b.v. hypotheekidentificatie en kadastraalonroerendezaakidentificatie.
@@ -78,9 +78,9 @@ De volgende Basis Registratie Kadaster gegevens kunnen opgevraagd worden:
 
 ### Algemeen
 Verder zijn er nog een paar algemene functies die gelden voor alle bovenstaande aanvragen:
-- Gebruik van de fields parameter om de response te filteren. (Voor werking, zie feature [fields](https://github.com/VNG-Realisatie/Haal-Centraal-common/blob/v1.2.0/features/fields.feature))
-- Gebruik van de expand parameter om subresources te ontsluiten. (Voor werking, zie feature [expand](https://github.com/VNG-Realisatie/Haal-Centraal-common/blob/v1.2.0/features/expand.feature))
-- Velden die altijd worden geleverd. (Voor werking, zie feature [levering velden](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/blob/master/features/levering-velden.feature))
+- Gebruik van de fields parameter om de response te filteren. (Voor werking, zie feature [fields](https://github.com/kadaster/BRK-bevragen/blob/master/Haal-Centraal-common/features/fields.feature))
+- Gebruik van de expand parameter om subresources te ontsluiten. (Voor werking, zie feature [expand](https://github.com/kadaster/BRK-bevragen/blob/master/Haal-Centraal-common/features/expand.feature))
+- Velden die altijd worden geleverd. (Voor werking, zie feature [levering velden](https://github.com/kadaster/BRK-bevragen/blob/master/features/levering-velden.feature))
 
 |Resource                           |Velden                         |
 |-----                              |------                         |
@@ -100,9 +100,9 @@ Verder zijn er nog een paar algemene functies die gelden voor alle bovenstaande 
 
 |Resource                           |Velden                         | Uitleg |
 |-----                              |------                         |----- |
-|KadastraalOnroerendeZaak           |koopsom & koopjaar & (aardCultuurBebouwd of aardCultuurOnBebouwd) | [levering koopsom](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/blob/master/features/levering-koopsom.feature)|
+|KadastraalOnroerendeZaak           |koopsom & koopjaar & (aardCultuurBebouwd of aardCultuurOnBebouwd) | [levering koopsom](https://github.com/kadaster/BRK-bevragen/blob/master/features/levering-koopsom.feature)|
 
-- [HAL links](https://tools.ietf.org/html/draft-kelly-json-hal-08), die soms [templated](https://github.com/VNG-Realisatie/Haal-Centraal-common/blob/v1.2.0/features/uri-templating.feature) worden geleverd.
+- [HAL links](https://tools.ietf.org/html/draft-kelly-json-hal-08), die soms [templated](https://github.com/kadaster/BRK-bevragen/blob/master/Haal-Centraal-common/features/uri-templating.feature) worden geleverd.
 
 ## Implementeer de API client
 Client code kun je genereren met de "[genereervariant](https://github.com/VNG-Realisatie/Haal-Centraal-BAG-bevragen/blob/master/specificatie/genereervariant/openapi.yaml){:target="_blank" rel="noopener"}" van de API-specificaties en een code generator. Een overzicht met codegeneratoren kun je vinden op [OpenAPI.Tools](https://openapi.tools/#sdk){:target="_blank" rel="noopener"}.
@@ -118,8 +118,8 @@ Note. De prerequisite van OpenAPI Generator is JAVA. Je moet een JAVA runtime in
 
 ## Probeer en test de API
 De werking van de API is het makkelijkst te testen met behulp van [Postman](https://www.getpostman.com/).
-De [openapi.yaml](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/blob/master/specificatie/genereervariant/openapi.yaml){:target="_blank"} kun je importeren als project, waarna de verschillende requests worden ingeladen die deze API ondersteunt.
-Je kunt ook het project dat we voor je heben gemaakt gebruiken: [BRK-Bevragen-postman-collection.json](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/blob/master/test/BRK-Bevragen-postman-collection.json){:target="_blank"}. Hierin moet je alleen de base url en authenticatie (API-key) nog invullen.
+De [openapi.yaml](https://github.com/kadaster/BRK-bevragen/blob/master/specificatie/genereervariant/openapi.yaml){:target="_blank"} kun je importeren als project, waarna de verschillende requests worden ingeladen die deze API ondersteunt.
+Je kunt ook het project dat we voor je heben gemaakt gebruiken: [BRK-Bevragen-postman-collection.json](https://github.com/kadaster/BRK-bevragen/blob/master/test/BRK-Bevragen-postman-collection.json){:target="_blank"}. Hierin moet je alleen de base url en authenticatie (API-key) nog invullen.
 
 ### Configureer de url en api key
 
@@ -140,7 +140,7 @@ De testomgeving van de API is te benaderen via de volgende urls:
 Vraag hiervoor een [API-key en PKI-overheidscertificaat](https://www.kadaster.nl/zakelijk/producten/eigendom/brk-bevragen) aan.
 
 ### Testgevallen
-Onderstaande tabellen bevatten testgevallen voor specifieke situaties waarmee de werking van de API kan worden getest op de test omgeving. Meer details over welke testdata in de testgevallen zit, vind je in [test cases](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/tree/master/test/cases)
+Onderstaande tabellen bevatten testgevallen voor specifieke situaties waarmee de werking van de API kan worden getest op de test omgeving. Meer details over welke testdata in de testgevallen zit, vind je in [test cases](https://github.com/kadaster/BRK-bevragen/tree/master/test/cases)
 
 #### Onroerende Zaken
 

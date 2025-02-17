@@ -49,8 +49,8 @@ Alle issues die in deze release zijn opgelost hebben in de issues-lijst het labe
 
 ### User stories
 
-- [882](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/issues/882){:target="_blank"}): Als medewerker Erfpacht wil ik weten wie de eigenaren zijn van appartementsrechten die uit erfpacht zijn ontstaan
-- [843](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/issues/843){:target="_blank"}): Als medewerker en ontwikkelaar wil ik dat niet vervallen maar wel gesplitste appartementsrechten een indicatie Sluimerend krijgen
+- [882](https://github.com/kadaster/BRK-bevragen/issues/882){:target="_blank"}): Als medewerker Erfpacht wil ik weten wie de eigenaren zijn van appartementsrechten die uit erfpacht zijn ontstaan
+- [843](https://github.com/kadaster/BRK-bevragen/issues/843){:target="_blank"}): Als medewerker en ontwikkelaar wil ik dat niet vervallen maar wel gesplitste appartementsrechten een indicatie Sluimerend krijgen
 
 ### Openapi.yaml
 
@@ -81,7 +81,7 @@ Alle issues die in deze release zijn opgelost hebben in de issues-lijst het labe
 
 ## **Versie 1.4.1:**
 
-  Issue [911](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/issues/911){:target="_blank"} opgelost.
+  Issue [911](https://github.com/kadaster/BRK-bevragen/issues/911){:target="_blank"} opgelost.
   Enumeratie TypeGerechtigdeEnum uitgebreid met
     - "artikel5_3b_geheel" en "brondocument". 
 
@@ -103,30 +103,30 @@ Alle issues die in deze release zijn opgelost hebben in de issues-lijst het labe
   - Response code 410 verwijderd bij de endpoints
 
 
-- stukken 2 nieuwe endpoints  ([622](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/issues/622){:target="_blank"} en [624](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/issues/624){:target="_blank"} ):
+- stukken 2 nieuwe endpoints  ([622](https://github.com/kadaster/BRK-bevragen/issues/622){:target="_blank"} en [624](https://github.com/kadaster/BRK-bevragen/issues/624){:target="_blank"} ):
   - /stukken/{stukidentificatie}
   - /stukdelen/{stukdeelidentificatie}
 
 
 - kadastraalOnroerendeZaken
-  - nummeraanduidingIdentificatie is toegevoegd als queryparameter aan /kadastraalonroerendezaken ([41](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/issues/41){:target="_blank"})
+  - nummeraanduidingIdentificatie is toegevoegd als queryparameter aan /kadastraalonroerendezaken ([41](https://github.com/kadaster/BRK-bevragen/issues/41){:target="_blank"})
   - Properties toegevoegd:
-    - indicatieVervallen ([42](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/issues/22){:target="_blank"})
-    - isOvergegaanIn ([42](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/issues/42){:target="_blank"} , [537](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/issues/537){:target="_blank"} , [538](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/issues/538){:target="_blank"})
-    - isOntstaanUit ([42](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/issues/42){:target="_blank"} , [537](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/issues/537){:target="_blank"} , [538](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/issues/538){:target="_blank"})
-    - bijbehorendeGrondpercelen ([200](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/issues/200){:target="_blank"})
-    - bijbehorendeAppartementsrechten ([200](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/issues/200){:target="_blank"})
+    - indicatieVervallen ([42](https://github.com/kadaster/BRK-bevragen/issues/22){:target="_blank"})
+    - isOvergegaanIn ([42](https://github.com/kadaster/BRK-bevragen/issues/42){:target="_blank"} , [537](https://github.com/kadaster/BRK-bevragen/issues/537){:target="_blank"} , [538](https://github.com/kadaster/BRK-bevragen/issues/538){:target="_blank"})
+    - isOntstaanUit ([42](https://github.com/kadaster/BRK-bevragen/issues/42){:target="_blank"} , [537](https://github.com/kadaster/BRK-bevragen/issues/537){:target="_blank"} , [538](https://github.com/kadaster/BRK-bevragen/issues/538){:target="_blank"})
+    - bijbehorendeGrondpercelen ([200](https://github.com/kadaster/BRK-bevragen/issues/200){:target="_blank"})
+    - bijbehorendeAppartementsrechten ([200](https://github.com/kadaster/BRK-bevragen/issues/200){:target="_blank"})
     - stukIdentificaties (Uitgestelde functionaliteit. Voornaamste aanleiding versie 1.3)
     - isVermeldInStukdeelIdentificaties (Uitgestelde functionaliteit. Voornaamste aanleiding versie 1.3)
   - Links toegevoegd:
-    - isOntstaanUit (achterwaartse filiatie naar gerelateerde kadastraalOnroerendeZaak) ([42](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/issues/42){:target="_blank"} , [537](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/issues/537){:target="_blank"} , [538](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/issues/538){:target="_blank"})
-    - isOvergegaanIn (voorwaartse filiatie naar gerelateerde kadastraalOnroerendeZaak) ([42](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/issues/42){:target="_blank"} , [537](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/issues/537){:target="_blank"} , [538](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/issues/538){:target="_blank"})
+    - isOntstaanUit (achterwaartse filiatie naar gerelateerde kadastraalOnroerendeZaak) ([42](https://github.com/kadaster/BRK-bevragen/issues/42){:target="_blank"} , [537](https://github.com/kadaster/BRK-bevragen/issues/537){:target="_blank"} , [538](https://github.com/kadaster/BRK-bevragen/issues/538){:target="_blank"})
+    - isOvergegaanIn (voorwaartse filiatie naar gerelateerde kadastraalOnroerendeZaak) ([42](https://github.com/kadaster/BRK-bevragen/issues/42){:target="_blank"} , [537](https://github.com/kadaster/BRK-bevragen/issues/537){:target="_blank"} , [538](https://github.com/kadaster/BRK-bevragen/issues/538){:target="_blank"})
     - stukken (Uitgestelde functionaliteit. Voornaamste aanleiding versie 1.3)
     - stukdelen (Uitgestelde functionaliteit. Voornaamste aanleiding versie 1.3)
-    - adressen (link naar [Haal-Centraal BAG adressen endpoint](https://vng-realisatie.github.io/Haal-Centraal-BAG-bevragen/) is nu in productie beschikbaar )
-    - adresseerbareObjecten (link naar [Haal-Centraal BAG adresseerbareobjecten endpoint](https://vng-realisatie.github.io/Haal-Centraal-BAG-bevragen/))
-    - bijbehorendeGrondpercelen (link naar gerelateerde kadastraalOnroerendeZaken) ([200](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/issues/200){:target="_blank"})
-    - bijbehorendeAppartementsrechten (links naar gerelateerde kadastraalOnroerendeZaken die als appartementsrecht ontstaan zijn uit deze kadastraalOnroerendeZaak. ([200](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/issues/200){:target="_blank"})
+    - adressen (link naar [Haal-Centraal BAG adressen endpoint](https://github.com/lvbag/BAG-API) is nu in productie beschikbaar )
+    - adresseerbareObjecten (link naar [Haal-Centraal BAG adresseerbareobjecten endpoint](https://github.com/lvbag/BAG-API))
+    - bijbehorendeGrondpercelen (link naar gerelateerde kadastraalOnroerendeZaken) ([200](https://github.com/kadaster/BRK-bevragen/issues/200){:target="_blank"})
+    - bijbehorendeAppartementsrechten (links naar gerelateerde kadastraalOnroerendeZaken die als appartementsrecht ontstaan zijn uit deze kadastraalOnroerendeZaak. ([200](https://github.com/kadaster/BRK-bevragen/issues/200){:target="_blank"})
 
 
 - hypotheken
@@ -242,7 +242,7 @@ Alle issues die in deze release zijn opgelost hebben in de issues-lijst het labe
 
   - Om het publiceren van onze specificaties met Github Pages mogelijk te maken zijn diverse documenten verplaatst naar de /docs.
   - N.a.v. de constructie om naar stukken en stukdelen te verwijzen vanuit meerdere properties in verschillende groepen van dezelfde resource is de feature [uri-templating](https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/master/features/uri-templating.feature) uitgebreid.
-  - Via https://vng-realisatie.github.io/Haal-Centraal-BRK-bevragen/ is de repository ook te raadplegen. Inmiddels wordt de specificatie ook met Redoc ontsloten.
+  - Via https://kadaster.github.io/BRK-bevragen/ is de repository ook te raadplegen. Inmiddels wordt de specificatie ook met Redoc ontsloten.
 
 
 ## **Versie 1.2.0:**

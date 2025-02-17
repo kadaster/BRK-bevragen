@@ -2,7 +2,7 @@
 Dit document beschrijft ontwerpkeuzes die gemaakt zijn voor het ontwerpen en specificeren van de API's. .
 
 ## Algemene design decisions
-In het document [design_desicions.md](https://github.com/VNG-Realisatie/Haal-Centraal-common/blob/master/docs/design_decisions.md) dat in de Haal-Centraal-common repository is opgenomen staan beslissingen opgesomd waar alle Haal Centraal API's zich aan conformeren.
+In het document [design_desicions.md](https://github.com/kadaster/BRK-bevragen/blob/master/Haal-Centraal-common/docs/design_decisions.md) dat in de Haal-Centraal-common repository is opgenomen staan beslissingen opgesomd waar alle Haal Centraal API's zich aan conformeren.
 
 ## Design decisions voor BRK-Bevragen.
 

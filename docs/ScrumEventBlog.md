@@ -16,7 +16,7 @@ hebben we de volgende scrum events op locatie gepland:
      *   De PO vertelt op basis van wat tot nu toe is besproken wat haar wensen zijn voor de komende Sprint (WAT)
      *   Het hele team maakt een haalbare planning, zet dit op het Scrum Board in de Sprint planning en werkt uit hoe dat gerealiseerd kan worden (HOE)
 
-Opmerkingen en zaken die tijdens de Sprint events zijn besproken zijn verwerkt in het [Scrum Board](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/projects/1).
+Opmerkingen en zaken die tijdens de Sprint events zijn besproken zijn verwerkt in het [Scrum Board](https://github.com/kadaster/BRK-bevragen/projects/1).
 
 De project call wordt verplaatst van donderdag 12:30 - 13:00 naar woensdag 11:30 - 12:00 uur.
 

@@ -17,7 +17,7 @@ info:
   version: "2.0.0"
   contact:
     name: Kadaster Haal Centraal BRK-Bevragen
-    url: https://github.com/VNG-Realisatie/Haal-Centraal-BRK-Bevragen
+    url: https://github.com/kadaster/BRK-bevragen
   license:
     name: European Union Public License, version 1.2 (EUPL-1.2)
     url: https://eupl.eu/1.2/nl/
