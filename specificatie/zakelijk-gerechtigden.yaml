@@ -11,7 +11,7 @@ paths:
       description: |
         Het raadplegen van een specifieke zakelijk gerechtigde van een kadastraal onroerende zaak. Het aandeel van de zakelijk gerechtigde wordt altijd geleverd in combinatie met het gezamenlijk aandeel (wanneer twee of meer personen een gezamenlijk aandeel hebben in een zakelijk recht, en ieders afzonderlijke aandeel in het gezamenlijk aandeel niet bekend is)
       parameters:
-        - $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/parameters/fields"
+        - $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/parameters/fields"
         - in: path
           name: kadastraalOnroerendeZaakIdentificatie
           description: |
@@ -26,36 +26,36 @@ paths:
           required: true
           schema:
             type: string
-        - $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/parameters/acceptCrs"
+        - $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/parameters/acceptCrs"
       responses:
         '200':
           description: |
                         Zoekactie geslaagd
           headers:
             api-version:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/headers/api_version"
+              $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/headers/api_version"
             Content-Crs:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/headers/contentCrs"
+              $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/headers/contentCrs"
             warning:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/headers/warning"
+              $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/headers/warning"
           content:
             application/hal+json:
               schema:
                 $ref: "#/components/schemas/ZakelijkGerechtigdeHal"
         '400':
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/responses/400"
+          $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/responses/400"
         '401':
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/responses/401"
+          $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/responses/401"
         '403':
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/responses/403"
+          $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/responses/403"
         '404':
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/responses/404"
+          $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/responses/404"
         '406':
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/responses/406"
+          $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/responses/406"
         '500':
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/responses/500"
+          $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/responses/500"
         '503':
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/responses/503"
+          $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/responses/503"
       tags:
       - Zakelijke Gerechtigden
   /kadastraalonroerendezaken/{kadastraalOnroerendeZaakIdentificatie}/zakelijkgerechtigden:
@@ -64,7 +64,7 @@ paths:
       description: |
                     Zoek zakelijk gerechtigden van een kadastraal onroerende zaak. Het aandeel van de zakelijk gerechtigde wordt altijd geleverd in combinatie met het gezamenlijk aandeel. Er is een gezamenlijk aandeel als twee of meer personen een gezamenlijk aandeel hebben in een zakelijk recht, en ieders afzonderlijke aandeel in het gezamenlijk aandeel niet bekend is.
       parameters:
-        - $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/parameters/fields"
+        - $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/parameters/fields"
         - in: path
           name: kadastraalOnroerendeZaakIdentificatie
           description: |
@@ -79,36 +79,36 @@ paths:
           required: false
           schema:
             $ref: "domain.yaml#/components/schemas/TypeGerechtigdeEnum"
-        - $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/parameters/acceptCrs"
+        - $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/parameters/acceptCrs"
       responses:
         '200':
           description: |
                         Zoekactie geslaagd
           headers:
             api-version:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/headers/api_version"
+              $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/headers/api_version"
             Content-Crs:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/headers/contentCrs"
+              $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/headers/contentCrs"
             warning:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/headers/warning"
+              $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/headers/warning"
           content:
             application/hal+json:
               schema:
                 $ref: "#/components/schemas/ZakelijkGerechtigdeHalCollectie"
         '400':
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/responses/400"
+          $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/responses/400"
         '401':
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/responses/401"
+          $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/responses/401"
         '403':
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/responses/403"
+          $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/responses/403"
         '404':
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/responses/404"
+          $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/responses/404"
         '406':
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/responses/406"
+          $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/responses/406"
         '500':
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/responses/500"
+          $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/responses/500"
         '503':
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/responses/503"
+          $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/responses/503"
       tags:
       - Zakelijke Gerechtigden
 components:
@@ -124,23 +124,23 @@ components:
       description: "De links naar stukken en stukdelen betreffen stukken en stukdelen waar een zakelijk recht, erfpachtcanon en/of tenaamstelling op gebaseerd zijn of waar het zakelijk recht, erfpachtcanon en/of de tenaamstelling in vermeld zijn."
       properties:
         self:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/schemas/HalLink"
+          $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/schemas/HalLink"
         persoon:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/schemas/HalLink"
+          $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/schemas/HalLink"
         betrokkenPartner:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/schemas/HalLink"
+          $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/schemas/HalLink"
         betrokkenSamenwerkingsverband:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/schemas/HalLink"
+          $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/schemas/HalLink"
         betrokkenGorzenEnAanwassen:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/schemas/HalLink"
+          $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/schemas/HalLink"
         stukken:
           type: "array"
           items:
-            $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/schemas/HalLink"
+            $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/schemas/HalLink"
         stukdelen:
           type: "array"
           items:
-            $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/schemas/HalLink"
+            $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/schemas/HalLink"
     ZakelijkGerechtigdeHalCollectie:
       type: "object"
       properties:
@@ -155,11 +155,11 @@ components:
       type: "object"
       properties:
         self:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/schemas/HalLink"
+          $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/schemas/HalLink"
         kadastraalOnroerendeZakenUitSplitsing:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/schemas/HalLink"
+          $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/schemas/HalLink"
         kadastraalOnroerendeZakenUitSplitsingInclusiefZakelijkGerechtigden:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-common/v1.2.0/api-specificatie/common.yaml#/components/schemas/HalLink"
+          $ref: "https://raw.githubusercontent.com/kadaster/BRK-bevragen/master/Haal-Centraal-common/api-specificatie/common.yaml#/components/schemas/HalLink"
     ZakelijkGerechtigdeHalCollectieEmbedded:
       type: "object"
       properties:

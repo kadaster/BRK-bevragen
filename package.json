@@ -25,14 +25,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen.git"
+    "url": "git+https://github.com/kadaster/BRK-bevragen.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/issues"
+    "url": "https://github.com/kadaster/BRK-bevragen/issues"
   },
-  "homepage": "https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen#readme",
+  "homepage": "https://github.com/kadaster/BRK-bevragen#readme",
   "devDependencies": {
     "@openapitools/openapi-generator-cli": "^2.5.2",
     "@stoplight/spectral-cli": "^6.6.0",
