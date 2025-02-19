@@ -42,7 +42,7 @@ In deze versie zijn geen userstories geïmplementeerd.
 
 ### Issues
 
-Alle issues die in deze release zijn opgelost hebben in de issues-lijst het label "v2.0" gekregen. Door op dit label te filteren in de (gesloten) issues is een gedetailleerd overzicht van wijzigingen en bug-fixes te krijgen.
+Alle issues die in deze release zijn opgelost hebben in de issues-lijst het label "v2.0" gekregen ([zie hier die betreffende issues](https://github.com/VNG-Realisatie/Haal-Centraal-BRK-bevragen/issues?q=label%3Av2.0+)).
 
 
 ## **Versie 1.5.0:**
