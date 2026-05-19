@@ -5,7 +5,8 @@ info:
     D.m.v. deze toepassing worden meerdere, korte bevragingen op de Basis Registratie Kadaster beschikbaar gesteld.
     Deze toepassing betreft het verstrekken van Kadastrale Onroerende Zaak informatie.
   contact:
-    name: Kadaster Haal Centraal BRK-Bevragen
+    name: Kadaster - BRK-Bevragen
+    email: brk-bevragen@kadaster.nl
     url: https://github.com/kadaster/BRK-bevragen
   license:
     name: European Union Public License, version 1.2 (EUPL-1.2)
