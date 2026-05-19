@@ -5,6 +5,10 @@ title: Haal Centraal BRK bevragingen
 
 # Release notes BRK-Bevragen
 
+## **Versie 2.0.1:**
+
+  Update de openapi.yaml contact informatie om te voldoen aan de REST-API designrules zodat het Kadaster met de BRK kan aansluiten op het Federatief Data Stelsel.
+
 ## **Versie 2.0.0:**
 
 ### User stories
