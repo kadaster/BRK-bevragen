@@ -5,6 +5,12 @@ title: Haal Centraal BRK bevragingen
 
 # Release notes BRK-Bevragen
 
+## **Versie 2.0.1:**
+
+### Openapi.yaml
+
+Update de openapi.yaml contact informatie.
+
 ## **Versie 2.0.0:**
 
 ### User stories
