@@ -1,0 +1,166 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "vcard": "http://www.w3.org/2006/vcard/ns#"
+  },
+  "@id": "https://api.brk.kadaster.nl/esd/bevragen/v2/dcat.jsonld",
+  "@type": "dcat:Catalog",
+  "dct:title": "BRK Bevragen API metadata catalogus",
+  "dct:description": "DCAT metadata voor de BRK Bevragen API van het Kadaster.",
+  "dct:publisher": {
+    "@id": "https://www.kadaster.nl",
+    "@type": "foaf:Agent",
+    "foaf:name": "Kadaster"
+  },
+  "dcat:contactPoint": {
+    "@type": "vcard:Kind",
+    "vcard:fn": "Kadaster - BRK Bevragen",
+    "vcard:hasEmail": {
+      "@id": "mailto:brk-bevragen@kadaster.nl"
+    },
+    "vcard:hasURL": {
+      "@id": "https://github.com/kadaster/BRK-bevragen"
+    },
+    "vcard:hasTelephone": {
+      "@id": "tel:+31881835300"
+    }
+  },
+  "dct:license": {
+    "@id": "https://eupl.eu/1.2/nl/"
+  },
+  "dcat:keyword": [
+    "BRK Bevragen",
+    "Basisregistratie Kadaster"
+  ],
+  "dcat:themeTaxonomy": {
+    "@id": "http://publications.europa.eu/resource/authority/data-theme"
+  },
+  "dct:language": {
+    "@id": "http://publications.europa.eu/resource/authority/language/NLD"
+  },
+  "dcat:dataset": [
+    {
+      "@id": "https://api.brk.kadaster.nl/esd/bevragen/v2/dcat/dataset",
+      "@type": "dcat:Dataset",
+      "dct:title": "Basisregistratie Kadaster",
+      "dct:description": "D.m.v. deze toepassing worden meerdere, korte bevragingen op de Basisregistratie Kadaster beschikbaar gesteld.",
+      "dct:identifier": "brk",
+      "dct:accessRights": {
+        "@id": "http://publications.europa.eu/resource/authority/access-right/RESTRICTED"
+      },
+      "dct:creator": {
+        "@id": "https://www.kadaster.nl",
+        "@type": "foaf:Agent",
+        "foaf:name": "Kadaster"
+      },
+      "dct:publisher": {
+        "@id": "https://www.kadaster.nl",
+        "@type": "foaf:Agent",
+        "foaf:name": "Kadaster"
+      },
+      "dcat:theme": [
+        {
+          "@id": "http://publications.europa.eu/resource/authority/data-theme/GOVE"
+        }
+      ],
+      "dcat:contactPoint": {
+        "@type": "vcard:Kind",
+        "vcard:fn": "Kadaster - BRK Bevragen",
+        "vcard:hasEmail": {
+          "@id": "mailto:brk-bevragen@kadaster.nl"
+        },
+        "vcard:hasURL": {
+          "@id": "https://github.com/kadaster/BRK-bevragen"
+        },
+        "vcard:hasTelephone": {
+          "@id": "tel:+31881835300"
+        }
+      },
+      "dct:language": {
+        "@id": "http://publications.europa.eu/resource/authority/language/NLD"
+      },
+      "dcat:keyword": [
+        "Kadastraal onroerende zaak",
+        "Zakelijk gerechtigde",
+        "Kadaster natuurlijk persoon",
+        "Kadaster niet-natuurlijk persoon",
+        "Hypotheek",
+        "Beslag",
+        "Privaatrechtelijke beperking",
+        "Publiekrechtelijke beperking",
+        "Stuk",
+        "Stukdeel"
+      ],
+      "dcat:distribution": [
+        {
+          "@id": "https://api.brk.kadaster.nl/esd/bevragen/v2/dcat/distribution",
+          "@type": "dcat:Distribution",
+          "dcat:accessURL": {
+            "@id": "https://kadaster.github.io/BRK-bevragen/"
+          },
+          "dct:license": {
+            "@id": "https://eupl.eu/1.2/nl/"
+          },
+          "dcat:accessService": {
+            "@id": "https://api.brk.kadaster.nl/esd/bevragen/v2/dcat/service"
+          }
+        }
+      ]
+    }
+  ],
+  "dcat:service": [
+    {
+      "@id": "https://api.brk.kadaster.nl/esd/bevragen/v2/dcat/service",
+      "@type": "dcat:DataService",
+      "dct:title": "Kadaster - BRK Bevragen API",
+      "dct:description": "D.m.v. deze toepassing worden meerdere, korte bevragingen op de Basisregistratie Kadaster beschikbaar gesteld.",
+      "dct:identifier": "brk-bevragen-api",
+      "dct:accessRights": {
+        "@id": "http://publications.europa.eu/resource/authority/access-right/RESTRICTED"
+      },
+      "dct:publisher": {
+        "@id": "https://www.kadaster.nl",
+        "@type": "foaf:Agent",
+        "foaf:name": "Kadaster"
+      },
+      "dct:license": {
+        "@id": "https://eupl.eu/1.2/nl/"
+      },
+      "dcat:theme": [
+        {
+          "@id": "http://publications.europa.eu/resource/authority/data-theme/GOVE"
+        }
+      ],
+      "dcat:contactPoint": {
+        "@type": "vcard:Kind",
+        "vcard:fn": "Kadaster - BRK Bevragen",
+        "vcard:hasEmail": {
+          "@id": "mailto:brk-bevragen@kadaster.nl"
+        },
+        "vcard:hasURL": {
+          "@id": "https://github.com/kadaster/BRK-bevragen"
+        },
+        "vcard:hasTelephone": {
+          "@id": "tel:+31881835300"
+        }
+      },
+      "dct:language": {
+        "@id": "http://publications.europa.eu/resource/authority/language/NLD"
+      },
+      "dcat:keyword": [
+        "BRK Bevragen API"
+      ],
+      "dcat:endpointDescription": {
+        "@id": "https://api.brk.kadaster.nl/esd/bevragen/v2/openapi.yaml"
+      },
+      "dcat:endpointURL": {
+        "@id": "https://api.brk.kadaster.nl/esd/bevragen/v2"
+      },
+      "dcat:servesDataset": {
+        "@id": "https://api.brk.kadaster.nl/esd/bevragen/v2/dcat/dataset"
+      }
+    }
+  ]
+}
